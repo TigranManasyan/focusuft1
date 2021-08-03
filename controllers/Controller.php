@@ -14,9 +14,10 @@ abstract class Controller
     /**
      * @param string $path
      * @param array $data
+     * @param string $layoutAlias
      * @return View
      */
-    public function view(string $path, array $data = []): View
+    public function view(string $path, array $data = [], $layoutAlias = ''): View
     {
         return new View($path, $data);
     }

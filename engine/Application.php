@@ -8,6 +8,11 @@ use engine\components\Router;
 class Application
 {
     /**
+     * @var array
+     */
+    public static array $configs_database;
+
+    /**
      * @var array|mixed
      */
     public static array $configs;

@@ -12,8 +12,10 @@ return [
     ],
     'layouts' => [
         'default' => [
-            'path' => 'views/layouts/',
-            'data' => 'Hello'
+            'path' => 'layouts/app.php',
+            'data' => [
+                'appName' => 'My Framework'
+            ]
         ],
         'admin' => [
             'path',

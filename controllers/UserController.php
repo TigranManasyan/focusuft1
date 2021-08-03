@@ -12,7 +12,8 @@ class UserController extends Controller
     public function index(): View
     {
         return view('users/index.php', [
-            'user' => "John Smith"
+            'user'=>"John Smith",
+            'email'=>"asd@mail.ru"
         ]);
     }
 }

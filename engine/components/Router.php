@@ -14,6 +14,7 @@ class Router
 
     /**
      * Router constructor.
+     * $routs key-in poxancum enq rout.php -ii veradarcrac zangvac@
      */
     public function __construct()
     {
@@ -25,7 +26,7 @@ class Router
      */
     public function getController()
     {
-        /** @var TYPE_NAME $path */
+        /** @var Application $path */
         $path = Application::$request->getPath();
         return $this->routes[$path]['controller'];
     }

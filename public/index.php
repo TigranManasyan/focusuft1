@@ -10,8 +10,8 @@ define('ROOT', __DIR__ . '/../');
 //connect file autoload.php where spl_autoload_register function  connect all classes
 require ROOT . 'engine/boostrap/autoload.php';
 
-/** @var TYPE_NAME $app */
+/** @var Application $app */
 $app = new Application();
 
-/** @var TYPE_NAME $app */
+/** @var Object $app */
 $app->run();

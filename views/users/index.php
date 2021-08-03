@@ -1,5 +1,6 @@
 <?php
 /** @var TYPE_NAME $user */
+/** @var TYPE_NAME $email */
 ?>
 
 <!doctype html>
@@ -13,5 +14,6 @@
 </head>
 <body>
 <h2><?= $user ?></h2>
+<p><?= $email ?></p>
 </body>
 </html>

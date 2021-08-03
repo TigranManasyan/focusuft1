@@ -25,18 +25,20 @@ class View extends Response
     /**
      * @var string
      */
-    public string $layout;
+    protected static string $layoutAlias;
+
 
     /**
      * View constructor.
      * @param $path
-     * @param $data
+     * @param array $data
+     * @param string $layoutAlias
      */
-    public function __construct($path, $data = [], $layout='')
+    public function __construct($path, $data = [], $layoutAlias = null)
     {
         $this->data = $data;
         $this->path = $path;
-        $this->layout = $layout;
+        self::$layoutAlias = $layoutAlias ?: 'default';
         parent::__construct();
     }
 
@@ -48,6 +50,11 @@ class View extends Response
         ob_start();
         extract($this->data);
         require ROOT . Application::$configs['views']['path'] . $this->path;
+        $content = ob_get_clean();
+
+        ob_start();
+        extract(Application::$configs['layouts'][self::$layoutAlias]['data']);
+        require ROOT . Application::$configs['views']['path'] . Application::$configs['layouts'][self::$layoutAlias]['path'];
         return ob_get_clean();
     }
 }

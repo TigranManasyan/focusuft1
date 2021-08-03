@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-    <g transform="translate(-12 -75.899)">
-        <path class="a" d="M24,0A24,24,0,1,1,0,24,24,24,0,0,1,24,0Z" transform="translate(12 75.899)"/>
-        <rect fill="#fff" width="14" height="4" rx="1" transform="translate(36 91.9) rotate(45)"/>
-        <rect fill="#fff" width="14" height="4" rx="1" transform="translate(26.101 101.799) rotate(-45)"/>
-    </g>
-</svg>

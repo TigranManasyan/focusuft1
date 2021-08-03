@@ -8,5 +8,4 @@ class HomeController extends Controller
     {
         return view('news/index.php');
     }
-
 }

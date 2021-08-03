@@ -4,5 +4,11 @@ namespace engine\traits;
 
 trait Renderable
 {
-    abstract public function view(string $path, array $data = []);
+    /**
+     * @param string $path
+     * @param array $data
+     * @param string $layoutAlias
+     * @return mixed
+     */
+    abstract public function view(string $path, array $data = [], $layoutAlias = '');
 }
