@@ -7,7 +7,11 @@ use engine\components\Router;
 
 class Application
 {
+    /**
+     * @var array|mixed
+     */
     public static array $configs;
+
 
     /**
      * @var Router
