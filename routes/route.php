@@ -2,6 +2,7 @@
 
 use controllers\HomeController;
 use controllers\NewsController;
+use controllers\UserController;
 
 return [
     '/' => [
@@ -10,6 +11,10 @@ return [
     ],
     '/news' => [
         'controller' => NewsController::class,
+        'action' => 'index'
+    ],
+    '/users' => [
+        'controller' => UserController::class,
         'action' => 'index'
     ]
 ];
