@@ -1,0 +1,12 @@
+
+/* Fonts */
+
+@include font-face(OpenSans, "fonts/OpenSans-Regular/OpenSans-Regular", 400, normal, eot woff2 woff ttf);
+@include font-face(OpenSans, "fonts/OpenSans-Bold/OpenSans-Bold", 700, normal, eot woff2 woff ttf);
+@include font-face(OpenSans, "fonts/OpenSans-SemiBold/OpenSans-SemiBold", 900, normal, eot woff2 woff ttf);
+
+@include font-face(Poppins, "fonts/Poppins-Regular/Poppins-Regular", 400, normal, eot woff2 woff ttf);
+@include font-face(Poppins, "fonts/Poppins-Bold/Poppins-Bold", 700, normal, eot woff2 woff ttf);
+
+@include font-face(FontAwesome, "fonts/FontAwesome/fontawesome-webfont", 400, normal, eot woff2 woff ttf);
+@include font-face('Pe-icon-7-stroke', "fonts/pe-icon-7-stroke/Pe-icon-7-stroke", 400, normal, eot woff ttf);

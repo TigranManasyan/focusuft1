@@ -1,0 +1,51 @@
+<!-- Start Contact-->
+
+.contact-2.dark-bg(data-image='img/contest/slide3.jpg')
+    h2.title Our contacts
+    span.blog-top__line
+    .container__in
+        .row
+            .col-lg-6.col-md-12.col-sm-12
+                .contacts.wow.fadeInUp.wow.fadeInUp(data-wow-delay='.2s')
+                    h3.contact__title Open Hours
+                    .contact__content
+                        |   Our support Hot line is available 24 Hours a day:
+                        p Monday-Friday: 8am to 6pm
+                        p Saturday: 10am to 2pm
+                        p Sunday: Closed
+
+                    .contact__block
+                        .contact__block-left
+                            .contact__icon
+                                i.fa.fa-map-marker
+                        .contact__block-right
+                            .contact__info Location: New York, USA
+
+                    .contact__block
+                        .contact__block-left
+                            .contact__icon
+                                i.fa.fa-phone
+                        .contact__block-right
+                            .contact__info Phone: +99098 980 98
+
+                    .contact__block
+                        .contact__block-left
+                            .contact__icon
+                                i.fa.fa-envelope
+                        .contact__block-right
+                            .contact__info Email: info@Mirax.com
+
+
+            #gotoform.col-lg-6.col-md-12.col-sm-12
+                #cf-manual.wow.fadeInUp.wow.fadeInUp(data-wow-delay='.2s')
+                    form.contact__form#contact-form-2
+                        input.contact__input(type='text', required, placeholder='First name...', name='first_name')
+                        input.contact__input(type='text', required, placeholder='Last name...', name='last_name')
+                        input.contact__input(type='email', required, placeholder='Your email...', name='email')
+                        textarea.contact__input(required, placeholder='Your message...', id='textarea', cols='30', rows='6', name='message')
+                        input.btn.contact__btn(type='submit', value='sent now')
+                        .form__result#success Your message has been send
+                        .form__result#error Error sending message
+
+
+<!-- End Contact-->

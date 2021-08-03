@@ -9,8 +9,8 @@ if (! function_exists('view'))
      * @param array $data
      * @return View
      */
-    function view(string $path, array $data = [], $default = ''): View
+    function view(string $path, array $data = []): View
     {
-        return new View($path, $data, $default);
+        return new View($path, $data);
     }
 }

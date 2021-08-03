@@ -1,0 +1,54 @@
+/*----------------------------------------------------------------------
+Theme Name:     Mirax
+Version:        1.0
+Author:         Oleko
+Tags: agency, business, clean, services, blog, creative, portfolio, studio
+-----------------------------------------------------------------------*/
+
+/*=======================================================================
+[Table of contents]
+=========================================================================
+
+1. Headers
+2. Sliders
+2. About
+3. Services
+4. Video
+5. Portfolio
+6. Price
+7. Team
+8. News
+9. Contacts
+11. Footer
+12. Blog
+
+==========================================================================*/
+@import "mixins";
+@import "fonts";
+@import "libs";
+@import "vars";
+
+@import "layouts/header/index";
+@import "../pug/components/slide_canvas_dots/index";
+@import "../pug/components/slide_particles/index";
+@import "../pug/components/slide_video/index";
+@import "../pug/components/slider_owl/index";
+@import "../pug/components/about/index";
+@import "../pug/components/services/index";
+@import "../pug/components/services_circle/index";
+@import "../pug/components/examples/index";
+@import "../pug/components/video_block/index";
+@import "../pug/components/price/index";
+@import "../pug/components/team/index";
+@import "../pug/components/testimonials/index";
+@import "../pug/components/news_posts/index";
+@import "../pug/components/partners/index";
+@import "../pug/components/contacts/index";
+@import "../pug/components/contacts_map/index";
+
+@import "layouts/footer/index";
+@import "core/buttons/index";
+
+@import "page/blog/blog";
+@import "page/page/page";
+@import "page/index/index";

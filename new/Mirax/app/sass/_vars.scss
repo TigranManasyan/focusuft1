@@ -1,0 +1,37 @@
+$default-font: "Open Sans", sans-serif;
+$accent-font: 'Poppins', 'roboto';
+
+$mainFontSize: 18px;
+$white: #fff;
+$bg_comment: #f8f8f8;
+$title-bg-color: #fff;
+
+// Colors Main
+$accent_color : #00a2ad;
+$bg_block_color : #f3f3f3;
+$bg_elements : #09003A;
+$header_text_color : #fff;
+$color_text : #09003A;
+
+// Colors 2
+$accent_color : #00a2ad;
+$bg_block_color : #f6f6ff;
+$bg_elements : #014656;
+$header_text_color : #fff;
+$color_text : #090037;
+
+// Colors 3
+//$accent_color : #998675;
+//$bg_block_color : #f6f6ff;
+//$bg_elements : #111;
+//$header_text_color : #fff;
+//$color_text : #333;
+
+// Media
+$mediaExtraSmall: (max-width: 575px);
+$mediaSmall: (min-width: 576px) and (max-width: 768px);
+$mediaMedium: (min-width: 769px) and (max-width: 992px);
+$mediaLarge: (min-width: 993px) and (max-width: 1200px);
+$mediaExtraLarge: (min-width: 1201px);
+$media_1500: (max-width: 1500px);
+

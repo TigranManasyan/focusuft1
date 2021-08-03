@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84.03" height="98"
+     viewBox="0 0 84.03 98">
+    <defs>
+        <style>.a{fill:url(#a);}.b{filter:url(#b);}</style>
+        <linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#3fbec3"/>
+            <stop offset="1" stop-color="#3b6cba"/>
+        </linearGradient>
+        <filter id="b" x="0" y="0" width="84.03" height="98" filterUnits="userSpaceOnUse">
+            <feOffset dy="3" input="SourceAlpha"/>
+            <feGaussianBlur stdDeviation="3" result="c"/>
+            <feFlood flood-color="#131a22" flood-opacity="0.161"/>
+            <feComposite operator="in" in2="c"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g class="b" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <path class="a"
+              d="M74.571,18.42c-20.55-8.254-28.214-14.907-28.3-14.991a3.6,3.6,0,0,0-4.8,0c-.084.084-7.664,6.653-28.3,14.991A3.674,3.674,0,0,0,10.9,21.789c0,42.448,29.9,59.629,31.246,60.3a3.238,3.238,0,0,0,1.769.421,4.526,4.526,0,0,0,1.769-.421c1.263-.674,31.246-17.855,31.246-60.3A3.935,3.935,0,0,0,74.571,18.42Zm-16.423,17.1-15.16,15.16a3.865,3.865,0,0,1-5.559,0L29.513,42.76A3.931,3.931,0,0,1,35.072,37.2l5.138,5.138L52.59,29.958a3.931,3.931,0,0,1,5.559,5.559Z"
+              transform="translate(-1.9 3.49)"/>
+    </g>
+</svg>

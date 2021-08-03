@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <style>.a{fill:#818f9b;opacity:0.48;}.b,.c{fill:#fff;}.c{font-size:12px;font-family:HelveticaNeue-Medium,
+            Helvetica Neue;font-weight:500;}
+        </style>
+    </defs>
+    <path class="a" d="M24,48A24,24,0,1,0,0,24,24,24,0,0,0,24,48Z"/>
+    <rect class="b" width="14" height="4" rx="1" transform="translate(21.172 35.606) rotate(-45)"/>
+    <rect class="b" width="14" height="4" rx="1" transform="translate(16.929 25.707) rotate(45)"/>
+    <text class="c" transform="translate(24 21)">
+        <tspan x="-14.118" y="0">more</tspan>
+    </text>
+</svg>

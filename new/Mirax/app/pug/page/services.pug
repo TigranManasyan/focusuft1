@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title
+        meta(name='”description”', content='””')
+        meta(name='”keywords”', content='””')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        meta(name='format-detection', content='telephone=no')
+        link(rel='shortcut icon' href='img/contest/favicon/favicon.ico' type='image/x-icon')
+        link(rel='stylesheet', href='css/main.min.css')
+
+    body.body.page-template-landing-page
+        .preloader
+            img(src="img/contest/preloader.GIF")
+        include ../layouts/header/index
+        .blog-top.bg-fixed(data-image='img/contest/slide4.jpg')
+            span.blog-top__bg
+            h2.blog-top__title Our services
+            span.blog-top__line
+
+        #primary.content-area(data-animate='on')
+            include ../components/services/index
+
+        include ../layouts/footer/index
+        .btn-back
+            i.fa.fa-angle-up
+
+        script(src='js/jquery.min.js')
+        script(src='js/scripts.min.js')

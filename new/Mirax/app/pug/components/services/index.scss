@@ -1,0 +1,119 @@
+/* Section Services Default*/
+@import "../../../sass/vars";
+@import "../../../sass/mixins";
+
+.services {
+  padding: 120px 0 90px;
+  @media #{$mediaMedium}{
+    padding: 60px 80px;
+  }
+  @media #{$mediaSmall}{
+    padding: 50px 20px 25px;
+  }
+  .container__in {
+    position: relative;
+  }
+  .title-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -80px;
+  }
+  .title-accent {
+    text-align: center;
+    padding-top: 55px;
+  }
+  .title {
+    text-align: center;
+    @media #{$mediaMedium}{
+      padding-bottom: 20px;
+    }
+    @media #{$mediaSmall}{
+      padding-bottom: 0px;
+    }
+  }
+}
+
+.services-block__item {
+  justify-content: center;
+  @media #{$mediaMedium}{
+    margin-top: 15px;
+  }
+}
+
+.services-block {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  height: calc(100% - 30px);
+  max-width: 100%;
+  min-height: 370px;
+  padding: 55px 45px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all .3s ease;
+  margin: 0 auto 30px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @media #{$mediaMedium}{
+    padding: 25px 20px;
+    min-height: 0;
+  }
+  i {
+    margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 50px;
+    width: auto;
+    height: auto;
+  }
+}
+
+.services-block__img {
+  margin-bottom: 20px;
+}
+
+.services-block__title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  font-family: $default-font;
+  letter-spacing: -0.5px;
+  margin-bottom: 25px;
+}
+
+.services-block__content{
+  text-align: justify;
+}
+
+.services-block__hover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-block__link {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  text-decoration: none;
+  transition: .3s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
