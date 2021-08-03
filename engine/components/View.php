@@ -23,14 +23,20 @@ class View extends Response
     public string $path;
 
     /**
+     * @var string
+     */
+    public string $layout;
+
+    /**
      * View constructor.
      * @param $path
      * @param $data
      */
-    public function __construct($path, $data = [])
+    public function __construct($path, $data = [], $layout='')
     {
         $this->data = $data;
         $this->path = $path;
+        $this->layout = $layout;
         parent::__construct();
     }
 

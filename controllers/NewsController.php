@@ -4,6 +4,7 @@
 namespace controllers;
 
 
+use engine\Application;
 use engine\components\View;
 
 class NewsController extends Controller
@@ -14,6 +15,6 @@ class NewsController extends Controller
             'news' => 'my first news',
             'content' => 'lorem ipsum',
             'layout' => 1
-        ]);
+        ], $default = Application::$configs['layouts']['default']['path']);
     }
 }
