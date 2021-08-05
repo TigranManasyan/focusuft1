@@ -1,6 +1,8 @@
 <?php
 
-return [
+$databaseConfigs = require ROOT . 'configs/database.php';
+
+$appConfigs = [
     'views' => [
         'path' => 'views/'
     ],
@@ -23,3 +25,5 @@ return [
         ]
     ]
 ];
+
+return array_merge($databaseConfigs, $appConfigs);

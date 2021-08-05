@@ -14,9 +14,26 @@ class NewsController extends Controller
     public function index(): View
     {
         $article = new Article;
-//        $articles = $article->all();
-//        var_dump($articles);die;
-        echo $article->all();
+        $user = new User;
+//        $articles = $article->all()->transform(function ($item) {
+//            $item['is_read'] = (bool) rand(0, 1);
+//            return $item;
+//        });
+//
+//        foreach ($articles as $article) {
+//            echo '<pre>';
+//            print_r($article);
+//            echo '</pre>';die;
+//        }
+        
+//        echo '<pre>';
+//        print_r($article->all('attributes'));
+//        echo '</pre>';die;
+//          $article->insert(["aaaa", "asas"]); die;
+//          $user->insert(["John", "Smith", 30]); die;
+          $user->update([
+              'first_name' => 'Karen', 'last_name' => 'Doe'
+          ],1); die;
 
         return view('news/index.php', [
             'news' => 'my first news',
