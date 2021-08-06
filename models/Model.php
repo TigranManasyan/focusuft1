@@ -6,12 +6,15 @@ use ArrayAccess;
 use engine\Application;
 use engine\components\Collection;
 use engine\db\MysqlConnection;
+use engine\traits\PrepareQueriesForExecution;
 use http\QueryString;
 use IteratorAggregate;
 use PDO;
 
 abstract class Model implements ArrayAccess
 {
+    use PrepareQueriesForExecution;
+
     /**
      * @var MysqlConnection
      */
@@ -26,6 +29,11 @@ abstract class Model implements ArrayAccess
      * @var array
      */
     protected array $attributes = [];
+
+    /**
+     * @var string
+     */
+    protected string $primaryKey = 'id';
 
     /**
      * Model constructor.
@@ -82,22 +90,21 @@ abstract class Model implements ArrayAccess
      */
     public function insert(array $attributes)
     {
-
-        $sql = "INSERT INTO %s VALUES (null, ";
-        $count=0;
-        foreach ($attributes as $value) {
-            $count++;
-            $sql .= ($count != count($attributes)) ? "'" . $value . "', " : "'" . $value . "'";
-        }
-        $sql .=  ")";
+        $sql = $this->prepareAttributesForInsert($attributes);
         $query = sprintf($sql, $this->table);
         $statement = $this->connection->connect()->prepare($query);
-        $statement->execute();
+        /** @var
+         * attribute values $values
+         */
+        $values = [];
+        foreach ($attributes as $key => $value) {
+            $values[] = $value;
+        }
+        $statement->execute($values);
     }
 
     /**
-     * @param $title
-     * @param $content
+     * @param $attributes
      * @param $id
      */
     public function update($attributes, $id)
@@ -105,17 +112,16 @@ abstract class Model implements ArrayAccess
         /** @var
          * $sql
          */
-        $sql = 'UPDATE %s SET ';
-        $count=0;
-        foreach ($attributes as $key => $value) {
-            $count++;
-            $sql .= ($count != count($attributes)) ? $key . ' = "' . $value . '",' : $key . ' = "' . $value . '"' ;
-        }
-        $sql .=  " WHERE id = $id";
+
+        $sql = $this->prepareAttributesForUpdate($attributes, $id);
 
         $query = sprintf($sql, $this->table);
         $statement = $this->connection->connect()->prepare($query);
-        $statement->execute();
+        $values = [];
+        foreach ($attributes as $key => $value) {
+            $values[] = $value;
+        }
+        $statement->execute($values);
     }
 
     /**

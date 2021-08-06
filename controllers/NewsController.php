@@ -14,7 +14,9 @@ class NewsController extends Controller
     public function index(): View
     {
         $article = new Article;
-        $user = new User;
+        $user = new User; 
+
+//        $user->update([]);
 //        $articles = $article->all()->transform(function ($item) {
 //            $item['is_read'] = (bool) rand(0, 1);
 //            return $item;
@@ -31,9 +33,18 @@ class NewsController extends Controller
 //        echo '</pre>';die;
 //          $article->insert(["aaaa", "asas"]); die;
 //          $user->insert(["John", "Smith", 30]); die;
-          $user->update([
-              'first_name' => 'Karen', 'last_name' => 'Doe'
-          ],1); die;
+//          $user->update([
+//              'first_name' => 'Karen', 'last_name' => 'Doe'
+//          ],1); die;
+
+
+            /*$article->insert([
+                'title' => "Title 7",
+                'content' => "lorem ipsum dolor"
+            ]);*/
+
+
+
 
         return view('news/index.php', [
             'news' => 'my first news',

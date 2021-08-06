@@ -27,6 +27,14 @@ class Collection implements IteratorAggregate
     }
 
     /**
+     * @return mixed|null
+     */
+    public function first()
+    {
+        return $this->items[0] ?? null;
+    }
+
+    /**
      * @param $item
      * @return $this
      */
